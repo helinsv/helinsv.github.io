@@ -1,0 +1,140 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+	.center-top-head, .right-top-head{
+		text-align: center;
+		border-top: 1px solid #242424;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	footer .links, footer .links a{
+		text-align: center;
+		float: none;
+	}
+
+	footer .links span{
+		text-align: center;
+		float: none;
+		display: block;
+		margin-top: 20px;
+	}
+
+	.section-white, .section-black{
+		padding: 150px 0 150px 0;
+	}
+
+	section .fa-angle-down{
+		font-size: 40px;
+		padding: 75px 0px 60px 0px;	
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.btn{
+		width: 250px;
+	}
+
+	.salata h2{
+		text-align: center;
+		float: none;
+	}
+
+	.salata .btn{
+		margin: 0 auto;
+		float: none;
+		display: block;
+		margin-top: 20px;
+	}
+
+	h1{
+		font-size: 37px;
+	}
+
+	.section-white, .section-black{
+		padding: 100px 0 100px 0;
+	}
+
+	section .fa-angle-down{
+		font-size: 40px;
+		padding: 50px 0px 40px 0px;	
+	}
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.btn{
+		width: 200px;
+	}
+
+	footer .links, footer .links a{
+		text-align: center;
+		float: none;
+	}
+
+
+
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

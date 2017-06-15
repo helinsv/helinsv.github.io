@@ -1,0 +1,336 @@
+/* =Reset
+-------------------------------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup,
+tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+	word-wrap:break-word;
+}
+
+html {
+	font-size: 62.5%;
+	/* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll;
+	/* Keeps page centered in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%;
+	/* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust: 100%;
+	/* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+*,
+*:before,
+*:after {
+	/* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box;
+	/* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing: border-box;
+	/* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing: border-box;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+a:focus {
+	outline: 0;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+a img {
+	border: 0;
+}
+
+/* =END Reset
+-------------------------------------------------------------- */
+@font-face {
+	font-family: "TitilliumWeb-Regular";	
+	src: url("fonts/Titillium_Web/TitilliumWeb-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+.container {
+	max-width: 1920px;
+	width: 100%;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	/*max-width: 100%;*/
+	position: relative;
+	line-height: 1.6;
+	font-family: "TitilliumWeb-Regular", sans-serif;
+	overflow-x: hidden;
+	color: #222222;
+}
+
+h1{
+	line-height: 1;
+	font-size: 40px;	
+	letter-spacing: 10px;
+}
+
+
+h2{	
+	font-size: 30px;
+	text-align: center;
+	letter-spacing: 10px;
+	font-weight: bold;
+
+}
+
+h4{	
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing:3px;
+}
+
+a, a>.fa{
+	color: white;
+}
+
+a:hover, a:active, a:focus {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a>.fa:hover{
+	font-size: 22px;
+}
+
+button, .btn{
+	display: inline-block;
+	width: 290px;
+	line-height: 33px;
+	font-size: 14px;
+	vertical-align: middle;
+	margin: 10px 0 10px 0; 
+}
+
+.btn-white{
+	background-color:white;
+	color: black;	
+}
+
+a:hover .btn, a:active .btn, a:focus .btn{
+	font-weight: normal;
+} 
+
+.btn-dark{	
+	color: #22222;	
+}
+
+.btn-orange, .btn:hover, .active, .tab-menu.active, .tab-contacts.active{
+	background-color: #a97d50;
+	color: white;
+	cursor: pointer;
+}
+
+.section-white, .section-black{
+	padding: 200px 0 200px 0;
+}
+
+.section-black{
+	background-color: #222222;
+	color:white;
+}
+
+section .fa-angle-down{
+	font-size: 40px;
+	padding: 100px 0px 90px 0px;	
+}
+
+section p{
+	text-align: justify;
+	-moz-text-align-last: center;
+	text-align-last: center;
+}
+
+.hidden {
+	display: none;
+}
+
+/*---header---------*/
+header {
+	color: white;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+.top-head{	
+	line-height: 35px;
+}
+
+.left-top-head {
+	background-color: #242424;	
+	text-align: center;
+	padding: 0 30px 0 30px;
+}
+
+.center-top-head, .right-top-head {
+	background-color: #a97d50;
+	padding: 0 30px 0 30px;	
+}
+
+.right-top-head {
+	text-align: right;
+}
+
+.right-top-head b{
+	padding-right: 10px;		
+}
+
+.right-top-head .fa{
+	font-size: 20px;
+	padding: 0px 10px 0px 10px;	
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+.top-baner{
+	background-image: url('img/head.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 400px;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.logo{
+	text-align: center;	
+	padding-top: 33%;
+	padding-bottom: 33%;
+	text-transform: uppercase;		
+}
+
+
+h1>span{
+	font-size: 20px;
+}
+
+.logo h2{
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+.menu-lg{
+	position: fixed;
+	text-align: right;
+	padding-top: 13%;
+	/*padding-bottom: 110%;*/
+	z-index: 10;
+	font-size: 18px;
+}
+
+.menu-lg ul{
+	list-style-type: circle;
+}
+
+.menu-lg ul li:hover, ul li:active{
+	list-style-type: disc;	
+}
+
+.menu-lg ul li a:hover, ul li a:active{
+	color: white;
+	text-decoration: none;	
+	-vendor-animation-duration: 5s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite;
+	
+}
+
+.menu-lg >ul li{
+	padding: 10px 0 10px 0;
+	font-weight: bold;
+}
+
+
+.menu-xs{	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	z-index: 10;
+	font-size: 18px;
+	background-color: #a97d50;
+	
+}
+
+.menu-xs ul{
+	text-align: center;
+}
+
+.menu-xs ul li a:hover, .menu-xs ul li a:active{
+	color: white;
+	text-decoration: none;
+	-vendor-animation-duration: 5s;
+  -vendor-animation-delay: 5s;
+  -vendor-animation-iteration-count: infinite;
+	
+}
+
+.menu-xs>ul li{
+	padding: 0 10px 0 10px;
+	display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

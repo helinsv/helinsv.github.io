@@ -1,0 +1,152 @@
+*::-webkit-input-placeholder {
+	color: white;
+	opacity: 0.8;
+}
+*:-moz-placeholder {
+	color: white;
+	opacity: 0.8;
+}
+*::-moz-placeholder {
+	color: white;
+	opacity: 0.8;
+}
+*:-ms-input-placeholder {
+	color: white;
+	opacity: 0.8;
+}
+
+*:focus::-webkit-input-placeholder {opacity: 0.2; transition: opacity 0.3s ease;}
+*:focus::-moz-placeholder          {opacity: 0.2; transition: opacity 0.3s ease;}
+*:focus:-moz-placeholder           {opacity: 0.2; transition: opacity 0.3s ease;}
+*:focus:-ms-input-placeholder      {opacity: 0.2; transition: opacity 0.3s ease;}
+
+/*------------wstep*/
+.about-us .button-wrap{
+	margin-top: 150px;
+	text-align: center;
+}
+/*------------------salata*/
+.salata{
+	background-image: url('img/salata.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 415px;	
+	width: 100%;
+	background-size: cover;	
+	display:table;
+}
+
+.row-fluid {
+	height:100%; 
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+.salata h2{
+	float: left;
+	color: white;
+}
+
+.salata .btn{
+	float: right;
+	text-align: center;
+}
+
+/*---------menu*/
+.button-wrap{
+	
+	text-align: center;
+}
+
+.btn{
+	font-size: 16px;
+}
+
+.tab-menu>.active{
+	text-decoration: underline;
+}
+
+.menu .tab_content{
+	margin-top: 100px;
+}
+/*---------galery*/
+.galery{
+	padding-bottom: 0px;
+}
+/*---------contacts*/
+.contacts .button-wrap{
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+
+.contacts .btn{
+	margin: 0px;
+}
+/*---------map*/
+#map {
+	width: 100%;
+	height: 400px;
+	background-color: grey;
+}
+/*---------call-back*/
+.call-back{
+	text-align: center;	
+}
+
+input, textarea{
+	background: transparent;
+	border:none;
+	padding: 20px 0 20px 0;
+	text-align: center;
+	vertical-align: middle;
+	color:white;
+	text-align: middle;
+	display: block;
+	margin: 0 auto;
+}
+
+textarea{	
+	margin-top: 80px;	
+}
+
+/*---------footer*/
+footer{
+	background-color: #222222;
+	padding-bottom: 50px;	
+	color:white;
+}
+
+footer img{
+	float: left;
+}
+
+.vcenter {
+	display: inline-block;
+	float: none;
+	vertical-align: middle;
+}
+
+footer p{
+	text-align: justify;
+}
+
+footer .links{
+	margin-top: 80px;
+}
+
+.links a{
+	padding-left: 10px;	
+}
+
+
+.links span{
+	text-align:left;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+.links span a{
+	float: right;
+}
+
+
