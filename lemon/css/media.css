@@ -33,18 +33,18 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.about img{
-		width:300px;
+		max-width:300px;
 	}
 
 	input[type=text], .input-bloc, .wrapper-button,#send {
-		width: 200px;
+		max-width: 200px;
 	}
 
 
 	/* Custom, iPhone Retina */
 	@media only screen and (max-width : 320px) {
 		.about img{
-			width:250px;
+			max-width:250px;
 		}
 	}
 
