@@ -11,12 +11,12 @@
  	if($sending) echo "";
 
  	$db_host = "10.0.0.2"; 
- 	$dbname = "uh400484_bd-helin";
- 	$db_user = "uh400484_root"; 
- 	$db_password = "123321"; 
+ 	$dbname = "******";
+ 	$db_user = "******"; 
+ 	$db_password = "******"; 
  	$db_table = "testtable"; 
 
- 	$db = mysql_connect($db_host,$db_user,$db_password) OR DIE("Не могу создать соединение ");
+ 	$db = mysql_connect($db_host,$db_user,$db_password) OR DIE("Can not create connection ");
 
  	mysql_select_db($dbname,$db);
  	mysql_query("SET NAMES 'utf8'",$db);
