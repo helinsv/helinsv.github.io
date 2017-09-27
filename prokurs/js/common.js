@@ -42,21 +42,18 @@ $(document).ready(function(){
 
 	$('.popup_c').magnificPopup();
 
-
- 	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$("form").submit(function() { 
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "mail.php", 
 			data: th.serialize()
 		}).done(function() {
 			alert("Thank you!");
 			setTimeout(function() {
 				var magnificPopup = $.magnificPopup.instance; 
 				magnificPopup.close(); 
-				th.trigger("reset"); //clear form
+				th.trigger("reset"); 
 			}, 1000);
 		});
 		return false;
