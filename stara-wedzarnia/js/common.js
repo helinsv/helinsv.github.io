@@ -12,12 +12,8 @@ $(document).ready(function(){
 		$(".tab-contacts .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");		
 
-
-
-//Попап менеджер FancyBox Документация: http://fancybox.net/howto
 $(".fancybox").fancybox();
 
-//Каруселькаокументация: http://owlgraphic.com/owlcarousel/
 var owl = $(".carousel");
 owl.owlCarousel({
 	items : 5
@@ -58,8 +54,6 @@ var waypoint = new Waypoint({
 	}
 });
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
 	$("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
