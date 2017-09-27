@@ -7,10 +7,8 @@ $(".hide-button").click(function() {
 		$("nav").slideToggle();
 	});
 
-	//Попап менеджер FancyBox Документация: http://fancybox.net/howto
 	$(".fancybox").fancybox();
 	
-	//Каруселькаокументация: http://owlgraphic.com/owlcarousel/
 	var owl = $(".carousel");
 	owl.owlCarousel({
 		items : 2
@@ -44,14 +42,8 @@ $(".hide-button").click(function() {
 		});
 		return false;
 	});
-
-	//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
 	$(".top_mnu").navigation();
 
-	//Добавляет классы дочерним блокам .block для анимации
-	//Документация: http://imakewebthings.com/jquery-waypoints/
 	$(".block").waypoint(function(direction) {
 		if (direction === "down") {
 			$(".class").addClass("active");
@@ -60,8 +52,6 @@ $(".hide-button").click(function() {
 		};
 	}, {offset: 100});
 
-	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
 	$("a.scroll").click(function() {
 		$.scrollTo($(".div"), 800, {
 			offset: -90
