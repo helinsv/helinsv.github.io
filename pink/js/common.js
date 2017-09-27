@@ -3,26 +3,12 @@ $(document).ready(function() {
 		offset:80
 	});
 
-	
-//$(".hide-button").click(function() {
-	//	$(this).parent().next().slideToggle();
-//	});
-
 $(".hide-button").click(function() {
 		$("nav").slideToggle();
 	});
 
-
-
-	//Попап менеджер FancyBox
-	//Документация: http://fancybox.net/howto
-	//<a class="fancybox"><img src="image.jpg" /></a>
-	//<a class="fancybox" data-fancybox-group="group"><img src="image.jpg" /></a>
 	$(".fancybox").fancybox();
 
-	
-	//Каруселька
-	//Документация: http://owlgraphic.com/owlcarousel/
 	var owl = $(".carousel");
 	owl.owlCarousel({
 		items : 2
@@ -42,13 +28,11 @@ $(".hide-button").click(function() {
 		owl.trigger("owl.prev");
 	});
 
-		
-	//Аякс отправка форм
-	//Документация: http://api.jquery.com/jquery.ajax/
+
 	$("#callback").submit(function() {
 		$.ajax({
 			type: "GET",
-			url: "mail.php", //change
+			url: "mail.php",
 			data: $("#callback").serialize()
 		}).done(function() {
 			alert("Thank you!");
@@ -59,16 +43,8 @@ $(".hide-button").click(function() {
 		return false;
 	});
 
-//---------------------------------------------------------------------------
-
-
-//Навигация по Landing Page
-	//$(".top_mnu") - это верхняя панель со ссылками.
-	//Ссылки вида <a href="#contacts">Контакты</a>
 	$(".top_mnu").navigation();
 
-	//Добавляет классы дочерним блокам .block для анимации
-	//Документация: http://imakewebthings.com/jquery-waypoints/
 	$(".block").waypoint(function(direction) {
 		if (direction === "down") {
 			$(".class").addClass("active");
@@ -77,30 +53,18 @@ $(".hide-button").click(function() {
 		};
 	}, {offset: 100});
 
-
-	//Плавный скролл до блока .div по клику на .scroll
-	//Документация: https://github.com/flesler/jquery.scrollTo
 	$("a.scroll").click(function() {
 		$.scrollTo($(".div"), 800, {
 			offset: -90
 		});
 	});
 
-
-//Кнопка "Наверх"
-	//Документация:
-	//http://api.jquery.com/scrolltop/
-	//http://api.jquery.com/animate/
 	$("#top").click(function () {
 		$("body, html").animate({
 			scrollTop: 0
 		}, 800);
 		return false;
 	});
-
-	//Таймер обратного отсчета
-	//Документация: http://keith-wood.name/countdown.html
-	//<div class="countdown" date-time="2015-01-07"></div>
 	var austDay = new Date($(".countdown").attr("date-time"));
 	$(".countdown").countdown({until: austDay, format: 'yowdHMS'});
 
